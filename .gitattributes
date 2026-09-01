@@ -1,0 +1,8 @@
+# Added by Constructor Studio: these lines make a plain command-line git
+# merge the per-author comment and flow logs under .studio/ without a lost
+# update (CONTRACT-sync.md §5). merge=union is a BUILT-IN git driver, so a
+# collaborator needs no configuration of their own to get this behaviour.
+# This is an append-only, per-author log of who added what and why — add to
+# it, do not rewrite it.
+.studio/**/*.jsonl merge=union
+.studio/history/** -diff
