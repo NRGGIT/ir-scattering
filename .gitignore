@@ -1,0 +1,9 @@
+# Added by Constructor Studio (CONTRACT-sync.md §6): .studio/ itself is
+# committed on purpose, but these two paths are local-only or derived and
+# carry no reviewable information — history-store.js keeps 200 full
+# snapshots per document, and changes/index.json is a derived cache whose
+# own header says so. Never remove a line here, and never negate .studio/.
+# This is an append-only, per-author log of who added what and why — add to
+# it, do not rewrite it.
+.studio/history/
+.studio/changes/index.json
